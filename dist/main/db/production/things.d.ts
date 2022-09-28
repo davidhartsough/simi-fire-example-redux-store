@@ -1,0 +1,12 @@
+import type { Thing, ThingInsert, ThingUpdate } from "../../types";
+export declare function generateThingId(): string;
+export declare function getThingChanges(userId: string, addThing: (thing: Thing) => void, modifyThing: (thing: Thing) => void, removeThing: (id: string) => void): void;
+export declare function getThing(thingId: string): Promise<Thing | null>;
+export declare function getThings(thingIds: string[]): Promise<Thing[]>;
+export declare function getAllUsersThings(userId: string): Promise<Thing[]>;
+export declare function createThing(thingInsert: ThingInsert): Promise<Thing>;
+export declare function createThings(thingInserts: ThingInsert[]): Promise<Thing[]>;
+export declare function updateThing(thingId: string, thingUpdate: ThingUpdate): Promise<boolean>;
+export declare function setThings(things: Thing[]): Promise<boolean>;
+export declare function deleteThing(thingId: string): Promise<boolean>;
+export declare function deleteThings(thingIds: string[]): Promise<boolean>;

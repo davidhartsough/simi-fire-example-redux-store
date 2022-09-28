@@ -1,0 +1,13 @@
+import type { AnyAction } from "redux";
+import type { ThunkAction } from "redux-thunk";
+import type { User, UserInput } from "../../types";
+import type { AppDispatch, AppThunkDispatch, RootState, ThunkActionBoolPromise } from "../types";
+export declare function signIn(email: string, password: string): ThunkActionBoolPromise;
+export declare function signUp(email: string, password: string): ThunkActionBoolPromise;
+export declare function googleSignIn(): ThunkActionBoolPromise;
+export declare function mobileGoogleSignIn(idToken: string): (dispatch: AppThunkDispatch) => boolean;
+export declare function handleAuth(uid: string, email: string): ThunkAction<Promise<User>, RootState, void, AnyAction>;
+export declare function signOut(): (dispatch: AppDispatch) => boolean;
+export declare function clearReset(): (dispatch: AppDispatch) => boolean;
+export declare function deleteUserAccount(): ThunkActionBoolPromise;
+export declare function updateUser(updates: UserInput): ThunkActionBoolPromise;

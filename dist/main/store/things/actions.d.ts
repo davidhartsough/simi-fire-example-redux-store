@@ -1,0 +1,12 @@
+import type { Thing, ThingInput, ThingUpdate } from "../../types";
+import type { AppDispatch, GetState, ThunkActionBoolPromise } from "../types";
+export declare function getAllUsersThings(): ThunkActionBoolPromise;
+export declare function createThing(thingInput: ThingInput): ThunkActionBoolPromise;
+export declare function createThings(thingInputs: ThingInput[]): ThunkActionBoolPromise;
+export declare function updateThing(thingId: string, thingUpdate: ThingUpdate): ThunkActionBoolPromise;
+export declare function updateThings(things: Thing[]): ThunkActionBoolPromise;
+export declare function deleteThing(thing: Thing): ThunkActionBoolPromise;
+export declare function deleteThingById(thingId: string): ThunkActionBoolPromise;
+export declare function deleteThings(things: Thing[]): ThunkActionBoolPromise;
+export declare function deleteThingsByIds(thingIds: string[]): ThunkActionBoolPromise;
+export declare function handleThingChanges(): (dispatch: AppDispatch, getState: GetState) => boolean;

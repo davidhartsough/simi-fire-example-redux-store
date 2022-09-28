@@ -1,0 +1,14 @@
+import type { Group, GroupInput, GroupUpdate } from "../../types";
+import type { AppDispatch, GetState, ThunkActionBoolPromise } from "../types";
+export declare function removeGroupIdFromThings(groupId: string): ThunkActionBoolPromise;
+export declare function removeGroupIdsFromThings(groupIds: string[]): ThunkActionBoolPromise;
+export declare function getAllUsersGroups(): ThunkActionBoolPromise;
+export declare function createGroup(groupInput: GroupInput): ThunkActionBoolPromise;
+export declare function createGroups(groupInputs: GroupInput[]): ThunkActionBoolPromise;
+export declare function updateGroup(groupId: string, groupUpdate: GroupUpdate): ThunkActionBoolPromise;
+export declare function updateGroups(groups: Group[]): ThunkActionBoolPromise;
+export declare function deleteGroup(groupId: string): ThunkActionBoolPromise;
+export declare function deleteGroups(groupIds: string[]): ThunkActionBoolPromise;
+export declare function handleGroupChanges(): (dispatch: AppDispatch, getState: GetState) => boolean;
+export declare function addThingToGroup(thingId: string, groupId: string): ThunkActionBoolPromise;
+export declare function removeThingFromGroup(thingId: string, groupId: string): ThunkActionBoolPromise;
