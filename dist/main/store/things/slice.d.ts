@@ -43,12 +43,12 @@ export declare const thingsSlice: import("@reduxjs/toolkit").Slice<Thing[], {
         payload: string[];
     }): void;
 }, "things">;
-export declare const receiveThings: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing[], string>, createThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing, string>, createThings: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing[], string>, modifyThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
+export declare const receiveThings: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing[], "things/receiveThings">, createThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing, "things/createThing">, createThings: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing[], "things/createThings">, modifyThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     thingId: string;
     thingUpdate: ThingUpdate;
-}, string>, updateThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing, string>, updateThings: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing[], string>, removeThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, string>, deleteThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, string>, deleteThings: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], string>, deleteThingsOfGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, string>, putThingsInGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
+}, "things/modifyThing">, updateThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing, "things/updateThing">, updateThings: import("@reduxjs/toolkit").ActionCreatorWithPayload<Thing[], "things/updateThings">, removeThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, "things/removeThing">, deleteThing: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, "things/deleteThing">, deleteThings: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], "things/deleteThings">, deleteThingsOfGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, "things/deleteThingsOfGroup">, putThingsInGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     thingIds: string[];
     groupId: string;
-}, string>, removeThingsFromGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], string>;
+}, "things/putThingsInGroup">, removeThingsFromGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], "things/removeThingsFromGroup">;
 declare const _default: import("redux").Reducer<Thing[], import("redux").AnyAction>;
 export default _default;

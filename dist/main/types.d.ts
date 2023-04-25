@@ -36,11 +36,11 @@ export interface GroupInsert extends GroupInput {
 export interface Group extends GroupInsert {
     id: string;
 }
-export declare type GroupOfThings = {
+export type GroupOfThings = {
     group: Group;
     things: Thing[];
 };
-export declare type GroupsAndThings = {
+export type GroupsAndThings = {
     groups: Group[];
     things: Thing[];
 };

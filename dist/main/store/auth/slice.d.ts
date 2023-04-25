@@ -9,7 +9,7 @@ export declare const initialState: {
     id: string;
     email: string;
 };
-export declare const receive: import("@reduxjs/toolkit").ActionCreatorWithPayload<User, string>, reset: import("@reduxjs/toolkit").ActionCreatorWithoutPayload<string>, setLoading: import("@reduxjs/toolkit").ActionCreatorWithoutPayload<string>, updateUser: import("@reduxjs/toolkit").ActionCreatorWithPayload<UserInput, string>;
+export declare const receive: import("@reduxjs/toolkit").ActionCreatorWithPayload<User, "auth/receive">, reset: import("@reduxjs/toolkit").ActionCreatorWithoutPayload<"auth/reset">, setLoading: import("@reduxjs/toolkit").ActionCreatorWithoutPayload<"auth/setLoading">, updateUser: import("@reduxjs/toolkit").ActionCreatorWithPayload<UserInput, "auth/updateUser">;
 declare const _default: import("redux").Reducer<{
     loading: boolean;
     isSignedIn: boolean;

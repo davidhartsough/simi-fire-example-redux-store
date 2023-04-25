@@ -31,9 +31,9 @@ export declare const groupsSlice: import("@reduxjs/toolkit").Slice<Group[], {
         payload: string[];
     }) => import("immer/dist/internal").WritableDraft<Group>[];
 }, "groups">;
-export declare const receiveGroups: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group[], string>, createGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group, string>, createGroups: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group[], string>, modifyGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
+export declare const receiveGroups: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group[], "groups/receiveGroups">, createGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group, "groups/createGroup">, createGroups: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group[], "groups/createGroups">, modifyGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     groupId: string;
     groupUpdate: GroupUpdate;
-}, string>, updateGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group, string>, updateGroups: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group[], string>, removeGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, string>, deleteGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, string>, deleteGroups: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], string>;
+}, "groups/modifyGroup">, updateGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group, "groups/updateGroup">, updateGroups: import("@reduxjs/toolkit").ActionCreatorWithPayload<Group[], "groups/updateGroups">, removeGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, "groups/removeGroup">, deleteGroup: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, "groups/deleteGroup">, deleteGroups: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], "groups/deleteGroups">;
 declare const _default: import("redux").Reducer<Group[], import("redux").AnyAction>;
 export default _default;
